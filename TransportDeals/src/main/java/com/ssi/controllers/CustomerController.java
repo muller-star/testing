@@ -23,6 +23,13 @@ public class CustomerController {
 		ModelAndView mv=new ModelAndView("customersaveconfirm");
 		return mv;
 	}
+    
+	@RequestMapping("Kapil choudhary")
+	public ModelAndView saveCity(@ModelAttribute("customer") Customer customer){
+		customerDAO.saveCustomer(customer);
+		ModelAndView mv=new ModelAndView("customersaveconfirm");
+		return mv;
+	}
 
 	
 	
